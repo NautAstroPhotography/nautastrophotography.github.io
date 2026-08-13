@@ -15,9 +15,9 @@
 
 const PORTFOLIO_IMAGES = [
   {
-    file: "REPLACE_1.jpg",
-    object: "NGC 7000 — North America Nebula",
-    meta: "Integration: 6.5 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM",
+    file: "images/veil_nebula_1.jpg",
+    object: "NGC 6960 — Western Veil Nebula",
+    meta: "Integration: 5.1 hrs · Ha-OIII<br>Svbony SV503 80ED / ASI2600MC",
     featured: true
   },
   {

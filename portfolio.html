@@ -106,6 +106,8 @@
   .tile-object { font-size: 14px; color: var(--gold); margin-bottom: 4px; }
   .tile-meta { font-size: 11px; color: var(--muted); line-height: 1.5; }
 
+  .tile { cursor: pointer; }
+
   /* Footer */
   .site-footer {
     padding: 40px 24px;
@@ -115,6 +117,60 @@
     color: var(--muted);
     border-top: 1px solid var(--line);
   }
+
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(10,10,10,0.88);
+    align-items: center; justify-content: center;
+    padding: 40px 24px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-window {
+    position: relative;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    max-width: 900px; width: 100%;
+    max-height: 85vh;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+  }
+  .lightbox-img {
+    width: 100%;
+    max-height: 65vh;
+    object-fit: contain;
+    background: #000;
+    display: block;
+  }
+  .lightbox-caption {
+    padding: 18px 22px;
+    border-top: 1px solid var(--line);
+  }
+  .lightbox-object {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .lightbox-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .lightbox-close {
+    position: absolute; top: 12px; right: 12px;
+    width: 34px; height: 34px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(10,10,10,0.7);
+    border: 1px solid var(--line);
+    color: var(--text);
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .lightbox-close:hover { border-color: var(--gold); color: var(--gold); }
 </style>
 </head>
 <body>
@@ -135,55 +191,55 @@
 
   <div class="gallery-grid">
     <!-- Add or remove .tile blocks freely as your body of work grows -->
-    <div class="tile" style="background-image:url('REPLACE_1.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_1.jpg', 'NGC 7000 — North America Nebula', 'Integration: 6.5 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_1.jpg')">
       <div class="tile-log">
         <p class="tile-object">NGC 7000 — North America Nebula</p>
         <p class="tile-meta">Integration: 6.5 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_2.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_2.jpg', 'M31 — Andromeda Galaxy', 'Integration: 4 hrs · RGB<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_2.jpg')">
       <div class="tile-log">
         <p class="tile-object">M31 — Andromeda Galaxy</p>
         <p class="tile-meta">Integration: 4 hrs · RGB<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_3.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_3.jpg', 'M42 — Orion Nebula', 'Integration: 3 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_3.jpg')">
       <div class="tile-log">
         <p class="tile-object">M42 — Orion Nebula</p>
         <p class="tile-meta">Integration: 3 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_4.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_4.jpg', 'IC 1396 — Elephant\'s Trunk', 'Integration: 8 hrs · SHO<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_4.jpg')">
       <div class="tile-log">
         <p class="tile-object">IC 1396 — Elephant's Trunk</p>
         <p class="tile-meta">Integration: 8 hrs · SHO<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_5.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_5.jpg', 'M45 — The Pleiades', 'Integration: 5 hrs · RGB<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_5.jpg')">
       <div class="tile-log">
         <p class="tile-object">M45 — The Pleiades</p>
         <p class="tile-meta">Integration: 5 hrs · RGB<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_6.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_6.jpg', 'M51 — Whirlpool Galaxy', 'Integration: 4.5 hrs · LRGB<br>Askar FRA400 / ASI2600MM')" style="background-image:url('REPLACE_6.jpg')">
       <div class="tile-log">
         <p class="tile-object">M51 — Whirlpool Galaxy</p>
         <p class="tile-meta">Integration: 4.5 hrs · LRGB<br>Askar FRA400 / ASI2600MM</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_7.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_7.jpg', 'Veil Nebula', 'Integration: — hrs · —<br>ASI2600MC Pro')" style="background-image:url('REPLACE_7.jpg')">
       <div class="tile-log">
         <p class="tile-object">Veil Nebula</p>
         <p class="tile-meta">Integration: — hrs · —<br>ASI2600MC Pro</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_8.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_8.jpg', 'Eagle Nebula', 'Integration: — hrs · Hubble Palette<br>ZWO 585MC Pro')" style="background-image:url('REPLACE_8.jpg')">
       <div class="tile-log">
         <p class="tile-object">Eagle Nebula</p>
         <p class="tile-meta">Integration: — hrs · Hubble Palette<br>ZWO 585MC Pro</p>
       </div>
     </div>
-    <div class="tile" style="background-image:url('REPLACE_9.jpg')">
+    <div class="tile" onclick="openLightbox('REPLACE_9.jpg', 'Dumbbell Nebula', 'Integration: — hrs · —<br>ZWO 585MC Pro')" style="background-image:url('REPLACE_9.jpg')">
       <div class="tile-log">
         <p class="tile-object">Dumbbell Nebula</p>
         <p class="tile-meta">Integration: — hrs · —<br>ZWO 585MC Pro</p>
@@ -194,6 +250,32 @@
   <footer class="site-footer">
     © 2026 Your Name · Tucson, AZ
   </footer>
+
+  <div class="lightbox" id="lightbox" onclick="if(event.target===this) closeLightbox()">
+    <div class="lightbox-window">
+      <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption">
+        <p class="lightbox-object" id="lightbox-object"></p>
+        <p class="lightbox-meta" id="lightbox-meta"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openLightbox(imgUrl, objectName, meta) {
+      document.getElementById('lightbox-img').src = imgUrl;
+      document.getElementById('lightbox-object').innerHTML = objectName;
+      document.getElementById('lightbox-meta').innerHTML = meta;
+      document.getElementById('lightbox').classList.add('open');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 
 </body>
 </html>

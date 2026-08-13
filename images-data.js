@@ -17,55 +17,31 @@ const PORTFOLIO_IMAGES = [
   {
     file: "images/veil_nebula_1.jpg",
     object: "NGC 6960 — Western Veil Nebula",
-    meta: "Integration: 5.1 hrs · Ha-OIII<br>Svbony SV503 80ED / ASI2600MC",
+    meta: "Integration: 5 hrs 5 min · Ha-OIII<br>Svbony SV503 80ED / ASI 2600MC",
     featured: true
   },
   {
-    file: "REPLACE_2.jpg",
-    object: "M31 — Andromeda Galaxy",
-    meta: "Integration: 4 hrs · RGB<br>Askar FRA400 / ASI2600MM",
+    file: "images/Eagle_1.jpg",
+    object: "M16 — Eagle Nebula",
+    meta: "Integration: 2 hrs 30 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true
   },
   {
-    file: "REPLACE_3.jpg",
-    object: "M42 — Orion Nebula",
-    meta: "Integration: 3 hrs · Ha-OIII-SII<br>Askar FRA400 / ASI2600MM",
+    file: "images/dumbbell_stretched.jpg",
+    object: "M27 — Dumbbell Nebula",
+    meta: "Integration: 1 hr 20 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true
   },
   {
-    file: "REPLACE_4.jpg",
-    object: "IC 1396 — Elephant's Trunk",
-    meta: "Integration: 8 hrs · SHO<br>Askar FRA400 / ASI2600MM",
+    file: "images/Mineral_Moon.jpg",
+    object: "Mineral Moon",
+    meta: "Integration: 2 panel mosaic<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true
   },
   {
-    file: "REPLACE_5.jpg",
-    object: "M45 — The Pleiades",
-    meta: "Integration: 5 hrs · RGB<br>Askar FRA400 / ASI2600MM",
+    file: "images/m42_update.jpg",
+    object: "M42 — Great Nebula of Orion",
+    meta: "Integration: 2 hrs 55 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true
   },
-  {
-    file: "REPLACE_6.jpg",
-    object: "M51 — Whirlpool Galaxy",
-    meta: "Integration: 4.5 hrs · LRGB<br>Askar FRA400 / ASI2600MM",
-    featured: true
-  },
-  {
-    file: "REPLACE_7.jpg",
-    object: "Veil Nebula",
-    meta: "Integration: — hrs · —<br>ASI2600MC Pro",
-    featured: false
-  },
-  {
-    file: "REPLACE_8.jpg",
-    object: "Eagle Nebula",
-    meta: "Integration: — hrs · Hubble Palette<br>ZWO 585MC Pro",
-    featured: false
-  },
-  {
-    file: "REPLACE_9.jpg",
-    object: "Dumbbell Nebula",
-    meta: "Integration: — hrs · —<br>ZWO 585MC Pro",
-    featured: false
-  }
 ];

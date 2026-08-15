@@ -15,6 +15,12 @@
 
 const PORTFOLIO_IMAGES = [
   {
+    file: "images/fireworks_galaxy.jpg",
+    object: "NGC 6946 — The Fireworks Galaxy",
+    meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    featured: true
+  },
+  {
     file: "images/veil_nebula_1.jpg",
     object: "NGC 6960 — Western Veil Nebula",
     meta: "Integration: 5 hrs 5 min · Ha-OIII<br>Svbony SV503 80ED / ASI 2600MC",

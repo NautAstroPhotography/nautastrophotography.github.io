@@ -21,7 +21,7 @@ const PORTFOLIO_IMAGES = [
     featured: true,
     variants: [
       { file: "images/fireworks_galaxy_2.jpg", label: "Processed" },
-      { file: "images/annotated_fireworks_galaxy_2.jpg", label: "Annotated" },
+      { file: "images/annotated_fireworks_galaxy_2.png", label: "Annotated" },
   ]
   },
   {

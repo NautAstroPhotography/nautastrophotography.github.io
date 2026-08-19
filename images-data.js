@@ -47,7 +47,7 @@ const PORTFOLIO_IMAGES = [
     featured: true,
     variants: [
       { file: "images/Eagle_1.jpg", label: "True Color" },
-      { file: "images/Eagle_4_(hubble_pallet_corrected).jpg", label: "Psuedo SHO - Hubble Palette" },
+      { file: "images/Eagle_4_(hubble_pallet_corrected).jpg", label: "Pseudo SHO · Hubble Palette" },
   ]
   },
   {

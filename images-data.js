@@ -32,7 +32,7 @@ const PORTFOLIO_IMAGES = [
   },
   {
     file: "images/veil_nebula_1_dark.jpg",
-    object: "NGC 6960 — Western Veil Nebula",
+    object: "NGC 6960 — Western Veil test Nebula",
     meta: "Integration: 5 hrs 5 min · Ha-OIII<br>Svbony SV503 80ED / ASI 2600MC",
     featured: true,
     variants: [

@@ -15,16 +15,34 @@
 
 const PORTFOLIO_IMAGES = [
   {
-    file: "images/fireworks_galaxy.jpg",
+    file: "images/fireworks_galaxy_2.jpg",
     object: "NGC 6946 — The Fireworks Galaxy",
     meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true
+    featured: true,
+    variants: [
+      { file: "images/fireworks_galaxy_2.jpg", label: "Processed" },
+      { file: "images/annotated_fireworks_galaxy_2.jpg", label: "Annotated" },
+  ]
+  },
+  {
+    file: "images/comet.jpg",
+    object: "NGC 6946 — The Fireworks Galaxy",
+    meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    featured: true,
+    variants: [
+      { file: "images/comet.jpg", label: "Processed" },
+      { file: "images/comet animation 2.gif", label: "Time Lapse" },
+  ]
   },
   {
     file: "images/veil_nebula_1.jpg",
     object: "NGC 6960 — Western Veil Nebula",
     meta: "Integration: 5 hrs 5 min · Ha-OIII<br>Svbony SV503 80ED / ASI 2600MC",
-    featured: true
+    featured: true,
+    variants: [
+      { file: "images/veil_nebula_1.jpg", label: "Processed" },
+      { file: "images/starless_veil_nebula_1s.jpg", label: "Starless" },
+  ]
   },
   {
     file: "images/Eagle_1.jpg",
@@ -48,6 +66,6 @@ const PORTFOLIO_IMAGES = [
     file: "images/m42_update.jpg",
     object: "M42 — Great Nebula of Orion",
     meta: "Integration: 2 hrs 55 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true
+    featured: false
   },
 ];

@@ -27,7 +27,7 @@ const PORTFOLIO_IMAGES = [
   {
     file: "images/comet.jpg",
     object: "NGC 6946 — The Fireworks Galaxy",
-    meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    meta: "Integration: 41 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true
   },
   {
@@ -64,6 +64,16 @@ const PORTFOLIO_IMAGES = [
     variants: [
       { file: "images/Mineral_Moon.jpg", label: "Mineral Enhancement" },
       { file: "images/Mono_Moon.jpg", label: "True Color" },
+  ]
+  },
+  {
+    file: "images/m13_newprocess.jpg",
+    object: "Messier 13 — The Hercules Globular Cluster",
+    meta: "Integration: 3 hrs 5 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    featured: false,
+    variants: [
+      { file: "images/m13_newprocess.jpg", label: "Processed" },
+      { file: "images/annotated_m13_newprocess.png", label: "Annotated" },
   ]
   },
   {

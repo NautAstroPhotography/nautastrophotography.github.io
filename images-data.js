@@ -28,11 +28,7 @@ const PORTFOLIO_IMAGES = [
     file: "images/comet.jpg",
     object: "NGC 6946 — The Fireworks Galaxy",
     meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true,
-    variants: [
-      { file: "images/comet.jpg", label: "Processed" },
-      { file: "images/comet animation 2.gif", label: "Time Lapse" },
-  ]
+    featured: true
   },
   {
     file: "images/veil_nebula_1.jpg",
@@ -48,7 +44,11 @@ const PORTFOLIO_IMAGES = [
     file: "images/Eagle_1.jpg",
     object: "M16 — Eagle Nebula",
     meta: "Integration: 2 hrs 30 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true
+    featured: true,
+    variants: [
+      { file: "images/Eagle_1.jpg", label: "True Color" },
+      { file: "images/Eagle_4_(hubble_pallet_corrected).jpg", label: "Psuedo SHO - Hubble Palette" },
+  ]
   },
   {
     file: "images/dumbbell_stretched.jpg",
@@ -59,8 +59,13 @@ const PORTFOLIO_IMAGES = [
   {
     file: "images/Mineral_Moon.jpg",
     object: "Mineral Moon",
-    meta: "Integration: 2 panel mosaic<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true
+    meta: "Integration: 2 panel mosaic · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    featured: true,
+    variants: [
+      { file: "images/Mineral_Moon.jpg", label: "Mineral Enhancement" },
+      { file: "images/Mono_Moon.jpg", label: "True Color" },
+  ]
+  },
   },
   {
     file: "images/m42_update.jpg",

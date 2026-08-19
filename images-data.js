@@ -17,7 +17,7 @@ const PORTFOLIO_IMAGES = [
   {
     file: "images/fireworks_galaxy_2.jpg",
     object: "NGC 6946 — The Fireworks Galaxy",
-    meta: "Integration: 1 hr 36 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    meta: "Integration: 6 hr 21 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true,
     variants: [
       { file: "images/fireworks_galaxy_2.jpg", label: "Processed" },

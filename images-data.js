@@ -41,7 +41,7 @@ const PORTFOLIO_IMAGES = [
     featured: true,
     variants: [
       { file: "images/veil_nebula_1.jpg", label: "Processed" },
-      { file: "images/starless_veil_nebula_1s.jpg", label: "Starless" },
+      { file: "images/veil_nebula_1_starless.jpg", label: "Starless" },
   ]
   },
   {

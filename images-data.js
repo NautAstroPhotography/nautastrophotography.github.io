@@ -66,7 +66,6 @@ const PORTFOLIO_IMAGES = [
       { file: "images/Mono_Moon.jpg", label: "True Color" },
   ]
   },
-  },
   {
     file: "images/m42_update.jpg",
     object: "M42 — Great Nebula of Orion",

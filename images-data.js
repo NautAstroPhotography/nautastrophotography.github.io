@@ -16,7 +16,7 @@
 const PORTFOLIO_IMAGES = [
   {
     file: "images/fireworks_galaxy_2.jpg",
-    object: "NGC 6946 — The Fireworks Galaxy",
+    object: "NGC 6946 — Fireworks Galaxy",
     meta: "Integration: 6 hr 21 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true,
     variants: [
@@ -25,14 +25,23 @@ const PORTFOLIO_IMAGES = [
   ]
   },
   {
+    file: "images/ring_nebula_1.jpg",
+    object: "M57 — Ring Nebula",
+    meta: "Integration: 2hrs 48 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
+    featured: true,
+    variants: [
+      { file: "images/ring_nebula_1.jpg", label: "HOO" },
+  ]
+  },
+  {
     file: "images/comet.jpg",
-    object: "NGC 6946 — The Fireworks Galaxy",
+    object: "220P/McNaught Comet",
     meta: "Integration: 41 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true
+    featured: true,
   },
   {
     file: "images/veil_nebula_1_dark_upd.jpg",
-    object: "NGC 6960 — Western Veil test Nebula",
+    object: "NGC 6960 — Western Veil Nebula",
     meta: "Integration: 5 hrs 5 min · Ha-OIII<br>Svbony SV503 80ED / ASI 2600MC",
     featured: true,
     variants: [
@@ -60,7 +69,7 @@ const PORTFOLIO_IMAGES = [
     file: "images/Mineral_Moon.jpg",
     object: "Mineral Moon",
     meta: "Integration: 2 panel mosaic · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
-    featured: true,
+    featured: false,
     variants: [
       { file: "images/Mineral_Moon.jpg", label: "Mineral Enhancement" },
       { file: "images/Mono_Moon.jpg", label: "True Color" },
@@ -68,7 +77,7 @@ const PORTFOLIO_IMAGES = [
   },
   {
     file: "images/m13_newprocess.jpg",
-    object: "Messier 13 — The Hercules Globular Cluster",
+    object: "Messier 13 — Hercules Globular Cluster",
     meta: "Integration: 3 hrs 5 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: false,
     variants: [
@@ -78,7 +87,7 @@ const PORTFOLIO_IMAGES = [
   },
   {
     file: "images/m42_update.jpg",
-    object: "M42 — Great Nebula of Orion",
+    object: "M42 — Orion Nebula",
     meta: "Integration: 2 hrs 55 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: false
   },

@@ -25,7 +25,7 @@ const PORTFOLIO_IMAGES = [
   ]
   },
   {
-    file: "images/ring_nebula_1.jpg",
+    file: "images/ring_nebula_1_crop.jpg",
     object: "M57 — Ring Nebula",
     meta: "Integration: 2hrs 48 min · RGB<br>Orion SpaceProbe 130st / ASI 585MC",
     featured: true,
